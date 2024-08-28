@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+  }
+  .container {
+    background: #f4f0ed;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-field {
+    margin-bottom: 32px;
+  }
+  label {
+    display: block;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    color: #224330;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  #origin,
+  #destination {
+    border: none;
+    border-radius: 8px;
+    background: #e8e8e8;
+    height: 48px;
+    outline: none;
+    box-shadow: none;
+    padding: 8px 12px;
+    font-size: 16px;
+    width: 350px;
+  }
+  .error-msg {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 1.2em;
+  }
+  .btn-prev-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  #submit-btn {
+    background-color: #b95940;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    font-style: 16px;
+    font-family: Montserrat;
+    line-height: 150%;
+    margin-right: 16px;
+    cursor: pointer;
+  }
+  #mile-output {
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 600;
+    color: #1d1e1c;
+    line-height: 150%;
+    font-size: 20px;
+  }
+  .refresh-btn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: ease-in-out 0.7s;
+    display: none;
+    cursor: pointer;
+  }
+  .refresh-btn img {
+    max-width: 100%;
+  }
+  

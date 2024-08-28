@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distance Calculation with Google Map API</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="distance-calc">
+        <div class="form-field">
+          <label for="origin">Your Starting Point</label>
+          <input type="text" id="origin" placeholder="Starting Point" />
+          <span class="error-msg">Field is required</span>
+        </div>
+        <div class="form-field">
+          <label for="destination">Your Destination</label>
+          <input type="text" id="destination" placeholder="Your Destination" />
+          <span class="error-msg">Field is required</span>
+        </div>
+        <div class="btn-prev-container">
+          <button id="submit-btn">Calculate</button>
+          <span class="refresh-btn"><img src="/refresh_icon.png" /></span>
+          <span id="mile-output"></span>
+        </div>
+      </form>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=MAP_API_KEY&libraries=places"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
